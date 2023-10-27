@@ -1,1 +1,1 @@
-static lib
+no worries
