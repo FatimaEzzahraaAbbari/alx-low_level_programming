@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 
 /**
  * main - prints all arguments it receives
@@ -9,7 +9,10 @@
  */
 int main(int argc, char *argv[])
 {
-	for (int i = 0; i < argc ; i++)
+	int i;
+
+	i = 0;
+	for (; i < argc ; i++)
 	{
 		printf("%s\n", argv[i]);
 	}
