@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * print all - prints all
- * @format: list of types of arguments to the function
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
  */
 void print_all(const char * const format, ...)
 {
@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 				case 's':
 					str = va_arg(list, char *);
 					if (!str)
-						str = "(null)";
+						str = "(nil)";
 					printf("%s%s", sep, str);
 					break;
 				default:
